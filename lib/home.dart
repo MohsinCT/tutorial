@@ -16,6 +16,8 @@ class Home extends StatelessWidget {
               width: 100,
               height: 200,
               color: Colors.green,
+              child:const Center(
+                child: Text('HEy man'),),
             ),
             Container(
               width: 100,
