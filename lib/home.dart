@@ -5,20 +5,18 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       appBar: AppBar(
         title: const Text('Git tutorial'),
       ),
-      body:  SizedBox(
-        width: double.infinity,
-        height: double.infinity,
-        child: Column(
+      body: ListView(children: [
+        Column(
           children: [
             Container(
               width: 400,
               height: 200,
               color: Colors.green,
-              child:const Column(
+              child: const Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text("you are the last hope"),
@@ -26,17 +24,20 @@ class Home extends StatelessWidget {
                 ],
               ),
             ),
+         const    SizedBox(
+              height: 20,
+            ),
             Container(
               width: 400,
               height: 200,
               color: Colors.red,
-              child:const Column(
+              child: const Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text("this world shall no paing"),
-                  Text("Hi sushi")
-                ],
+                children: [Text("this world shall no paing"), Text("Hi sushi")],
               ),
+            ),
+          const   SizedBox(
+              height: 20,
             ),
             Container(
               width: 400,
@@ -46,14 +47,34 @@ class Home extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text('if you wanna win you have to loose first'),
-                  Text("Failure is not just a big thing failure means this is your \nfirst attempt")
+                  Text(
+                      "Failure is not just a big thing failure means this is your \nfirst attempt")
                 ],
               ),
             ),
-            
+          const   SizedBox(
+              height: 20,
+            ),
+            Container(
+              width: 400,
+              height: 200,
+              color: Colors.yellow,
+              child: const Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text('if you wanna win you have to loose first'),
+                  Text(
+                      "Failure is not just a big thing failure means this is your \nfirst attempt"),
+                 
+                ],
+              ),
+            ),
+          const SizedBox(
+              height: 20,
+            ),
           ],
         ),
-      ),
+      ]),
     );
   }
 }
