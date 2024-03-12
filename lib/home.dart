@@ -6,28 +6,36 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: const Text('Git tutorial'),
+      ),
       body:  SizedBox(
         width: double.infinity,
         height: double.infinity,
         child: Column(
           children: [
             Container(
-              width: 100,
+              width: 400,
               height: 200,
               color: Colors.green,
               child:const Center(
-                child: Text('HEy man'),),
+                child: Text('TASK COMPLETED'),),
             ),
             Container(
-              width: 100,
+              width: 400,
               height: 200,
               color: Colors.red,
+              child: const Center(
+                child: Text('TASK INCOMPLETED'),
+              ),
             ),
             Container(
-              width: 100,
+              width: 400,
               height: 200,
               color: Colors.blue,
+              child: const Center(
+                child: Text('REPEAT'),
+              ),
             ),
             
           ],
