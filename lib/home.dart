@@ -18,23 +18,36 @@ class Home extends StatelessWidget {
               width: 400,
               height: 200,
               color: Colors.green,
-              child:const Center(
-                child: Text('TASK COMPLETED'),),
+              child:const Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text("you are the last hope"),
+                  Text("clear your mind")
+                ],
+              ),
             ),
             Container(
               width: 400,
               height: 200,
               color: Colors.red,
-              child: const Center(
-                child: Text('TASK INCOMPLETED'),
+              child:const Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text("this world shall no paing"),
+                  Text("Hi sushi")
+                ],
               ),
             ),
             Container(
               width: 400,
               height: 200,
               color: Colors.blue,
-              child: const Center(
-                child: Text('REPEAT'),
+              child: const Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text('if you wanna win you have to loose first'),
+                  Text("Failur is not just a big thing failure means your this is your \nfirst attempt")
+                ],
               ),
             ),
             
