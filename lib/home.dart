@@ -46,7 +46,7 @@ class Home extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text('if you wanna win you have to loose first'),
-                  Text("Failur is not just a big thing failure means your this is your \nfirst attempt")
+                  Text("Failure is not just a big thing failure means this is your \nfirst attempt")
                 ],
               ),
             ),
